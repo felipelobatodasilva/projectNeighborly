@@ -14,9 +14,9 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     
     if id:
         try:
-            url = "localhost"  # TODO: Update with appropriate MongoDB connection information
+            url = "mongodb://myazurecosmosdblegolasproject:EcoxKxMrJqDi7ssaktaY3jGCIG7YXMPiR1SJ6e8WbCTNBlQsY7irUeYSsScK0HIiLh4fpPRLMyQYl1JG4v4EXQ==@myazurecosmosdblegolasproject.mongo.cosmos.azure.com:10255/?ssl=true&replicaSet=globaldb&retrywrites=false&maxIdleTimeMS=120000&appName=@myazurecosmosdblegolasproject@"  # TODO: Update with appropriate MongoDB connection information
             client = pymongo.MongoClient(url)
-            database = client['azure']
+            database = client['legolasprojectdb']
             collection = database['advertisements']
            
             query = {'_id': ObjectId(id)}
