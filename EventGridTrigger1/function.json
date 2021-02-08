@@ -1,0 +1,12 @@
+{
+  "scriptFile": "__init__.py",
+  "bindings": [
+    {
+      "type": "eventGridTrigger",
+      "name": "event",
+      "direction": "in",
+      "eventHubName": "legolasprojectneighborly",
+      "connection": "Endpoint=sb://legolasprojectneighborly.servicebus.windows.net/;SharedAccessKeyName=NeighborlyProject;SharedAccessKey=5l31Gn+K2XDurLdY3XeYhl+tnkQFLcTw9G+sJt1MNNo=;EntityPath=myeventhub"
+    }
+  ]
+}
